@@ -1,0 +1,8 @@
+{
+  "name": "Aura — Undated Digital Planner & Stickers",
+  "description": "An interactive undated digital planner featuring vision boards, monthly spreads, habit trackers, sticker drawer, and high-fidelity PDF export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

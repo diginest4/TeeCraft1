@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-serif-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+/* Notebook paper patterns */
+.bg-paper-cream {
+  background-color: #FAF7F2;
+}
+
+.bg-paper-grid {
+  background-color: #FAF7F2;
+  background-image: 
+    linear-gradient(to right, rgba(190, 180, 168, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(190, 180, 168, 0.25) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-paper-dot {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(rgba(170, 160, 148, 0.35) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.bg-paper-lined {
+  background-color: #FAF7F2;
+  background-image: linear-gradient(to bottom, transparent 27px, rgba(190, 180, 168, 0.35) 28px);
+  background-size: 100% 28px;
+}
+
+/* Washi tape realistic edge */
+.washi-tape {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(0.5px);
+}
+
+/* Print / PDF generation optimizations */
+@media print {
+  body {
+    background: transparent !important;
+    padding: 0 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .planner-page-container {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
